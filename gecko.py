@@ -9,6 +9,15 @@ def parse_args():
         exit()
 
     args = sys.argv[1:]
+    title = False
+
+    for arg in args:
+        if arg.startswith('t='):
+            title = True
+    
+    if not title:
+        print('Enter the movie title in the command line arguments')
+        exit()
 
     genre = ""
     rating = ""
