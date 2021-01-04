@@ -1,0 +1,11 @@
+To begin with, the function for parsing command line arguments was implemented.
+It checks if at least one movie title has been passed, then it returns all titles and
+genre and IMDb rating if they have been passed.
+
+Then, in the main function, first it connects to the database. I used mongoDB, and created
+"movie" collection in which I stored downloaded movie information.
+Then, for all movie titles I checked if it is already stored in the database. If it is not stored, I send
+requests to OMDb API, if it is stored, I get the information from the database.
+
+Then, I checked which parameter is passed and wrote movie information if the specified movie
+satisfies the conditions.
