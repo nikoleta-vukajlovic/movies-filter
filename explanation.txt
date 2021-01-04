@@ -9,3 +9,11 @@ requests to OMDb API, if it is stored, I get the information from the database.
 
 Then, I checked which parameter is passed and wrote movie information if the specified movie
 satisfies the conditions.
+
+*Running example:
+
+python3 gecko.py t=titanic t=girl genre=Drama imdbRating=8
+
+- t=something - to specify movie title(multiple words are supported)
+- genre=somethig - to specify genre
+- imdbRating=something - to specify imdb rating value
